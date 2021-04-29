@@ -1,3 +1,4 @@
+name: Test two
 on: [push]
 
 jobs:
@@ -6,6 +7,6 @@ jobs:
       
       steps:
       - uses: actions/checkout@v2
-      - name: action one
+      - name: action two
       
         run: echo "hello $GITHUB_ACTOR"
