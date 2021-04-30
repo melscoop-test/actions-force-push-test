@@ -1,11 +1,12 @@
 name: Test three
 on: [push]
 
-  jobs:
+jobs:
     Initiate:
       runs-on: [ubuntu-latest]
-
-  steps:
-   - uses: actions/checkout@v2
-   - name: action three
-      run: echo "hello $GITHUB_ACTOR"
+      
+      steps:
+      - uses: actions/checkout@v2
+      - name: action three
+      
+        run: echo "hello $GITHUB_ACTOR"
